@@ -56,6 +56,7 @@ class GistsList_TVC: UITableViewController {
                 case .success(let value):
                     guard let dataArray = value as? Array<Dictionary<String, Any>>
                         else {return}
+                    
                     for responseGist in dataArray {
                         let gist = GistsList_Model(responseGist)
                         self.gistList.append(gist)
