@@ -80,7 +80,6 @@ class GistsList_TVC: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return self.gistList.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "GistViewCell", for: indexPath) as? GistsList_TVCell {
