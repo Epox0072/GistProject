@@ -11,6 +11,7 @@ import UIKit
 
 
 struct GistsList_Model {
+    var gistsLists : Array<Dictionary<String, Any>> = Array()
     var owner : Dictionary<String, Any>
     var userName : String
     var userAvatarURL : String
